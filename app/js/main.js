@@ -109,4 +109,8 @@ $(function () {
     $('.header').toggleClass('header--active');
   });
 
+  $('.certificates__btn').on('click', function () {
+    $('.certificates__items').addClass('certificates__items--active');
+  });
+
 });

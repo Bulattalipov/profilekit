@@ -26,6 +26,12 @@
     margin: 0 35px;
   }
 }
+@media (max-width: 1345px){
+  .blog__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1320px){
   .whyus{
     &__wrapper{
@@ -91,6 +97,11 @@
   }
 }
 
+@media (max-width: 1030px) {
+  .blog__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 1000px) {
   .aboutus{
     &__wrapper{
@@ -194,8 +205,15 @@
   .portfolio,
   .team,
   .aboutus,
-  .catolog{
+  .catolog,
+  .blog{
     padding: 100px 0;
+  }
+  .certificates{
+    padding: 100px 0 60px;
+    &__title{
+      margin-bottom: 60px;
+    }
   }
   .top-catolog {
     height: 600px;
@@ -224,6 +242,12 @@
   }
 }
 
+@media (max-width: 670px) {
+  .blog__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-width: 600px) {
   .header{
     &__menu-btn{
@@ -244,6 +268,22 @@
   .header--active{
     .header__contain{
       transform: translateY(0);
+    }
+  }
+  .certificates{
+    &__item{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__item-text{
+      margin-right: 0;
+    }
+    &__item-box{
+      margin-top: 10px;
+      margin-left: auto;
+    }
+    &__item-boxDown{
+      margin-right: 20px;
     }
   }
 }
