@@ -149,6 +149,26 @@
   }
 }
 
+@media (max-width: 800px) {
+  .vacancies-item{
+    &__info{
+      flex-direction: column;
+    }
+    &__info-contain{
+      margin-bottom: 10px;
+    }
+    &__box{
+      flex-direction: column;
+    }
+    &__box-item{
+      margin: 10px 0;
+      max-width: 100%;
+      &:nth-child(2){
+        margin: 10px 0;
+      }
+    }
+  }
+} 
 @media (max-width: 770px) {
   .header{
     &__contain{
@@ -206,7 +226,8 @@
   .team,
   .aboutus,
   .catolog,
-  .blog{
+  .blog
+  {
     padding: 100px 0;
   }
   .certificates{
@@ -214,6 +235,9 @@
     &__title{
       margin-bottom: 60px;
     }
+  }
+  .vacancies{
+    padding: 100px 0 50px;
   }
   .top-catolog {
     height: 600px;

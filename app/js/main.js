@@ -113,4 +113,9 @@ $(function () {
     $('.certificates__items').addClass('certificates__items--active');
   });
 
+  $('.vacancies-item__details').on('click', function () {
+    $($(this)).toggleClass('vacancies-item__details--active');
+    $($(this)).next().toggleClass('vacancies-item__box--active');
+  });
+
 });
