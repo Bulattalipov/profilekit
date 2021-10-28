@@ -1,0 +1,279 @@
+@media (max-width: 1400px){
+  .team .slick-list.draggable {
+    max-width: 1300px;
+    margin: 0 35px;
+  }
+}
+@media (max-width: 1360px){
+  .portfolio{
+    &__contents{
+      margin: 0 50px 78px;
+    }
+  }
+}
+
+@media (max-width: 1350px){
+  .reviews{
+    &__wrapper{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin: 0 35px 40px;
+    }
+  }
+  .portfolio__items .slick-list.draggable {
+    margin: 0 35px;
+  }
+}
+@media (max-width: 1320px){
+  .whyus{
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__title{
+      margin-bottom: 60px;
+    }
+  }
+}
+@media (max-width: 1250px){
+  .portfolio{
+    &__content-imgBox{
+      margin-right: 50px;
+    }
+  }
+}
+@media (max-width: 1240px){
+  .header{
+    &__menu-btn{
+      display: flex;
+    }
+  }
+  .header--active{
+    .menu{
+      transform: translateY(0);
+    }
+  }
+  .menu{
+    transform: translateY(-200%);
+    transition: all .3s;
+    position: absolute;
+    top: 73px;
+    right: 0;
+    max-width: 300px;
+    width: 100%;
+    background-color: #F0F0F0;
+    &__list{
+      flex-direction: column;
+    }
+    &__list-item{
+      height: 49px;
+      width: 100%;
+    }
+    &__list-link{
+      display: block;
+      padding: 15px 9px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .utility{
+    &__wrapper{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin: 0 20px 30px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutus{
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__content{
+      order: -1;
+      margin-bottom: 40px;
+    }
+    &__imgBox{
+      margin-right: 0;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .whyus{
+    &__items{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin: 0 15px 40px;
+    }
+  }
+  .portfolio__content-imgBox{
+    display: none;
+  }
+  .footer__wrapper{
+    flex-direction: column;
+    .logo{
+      margin-bottom: 30px;
+    }
+  }
+  .footer__box{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__box-mail{
+    margin-right: 0;  
+  }
+  .footer__box-tel{
+    &:nth-child(2){
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .header{
+    &__contain{
+      margin-left: auto;
+    }
+    &__numbers{
+      transform: translateY(-1000%);
+      transition: all .3s;
+      position: absolute;
+      top: 416px;
+      right: 0;
+      max-width: 300px;
+      width: 100%;
+      margin: 0;
+      background-color: #F0F0F0;
+    }
+    &__numbers-link{
+      text-align: center;
+      margin: 5px 0;
+    }
+  }
+  .header--active{
+    .header__numbers{
+      transform: translateY(0);
+    }
+  }
+  .top-slider{
+    height: 600px;
+    &__images{
+      height: 600px;
+    }
+    &__image{
+      height: 600px;
+    }
+    &__content{
+      height: 470px;
+      margin: 0 45px;
+      max-width: auto;
+      width: auto !important;
+    }
+    &__content-title{
+      font-size: 50px;
+    }
+    &__content-subtitle{
+      font-size: 30px;
+    }
+    .slick-dots{
+      bottom: -35px;
+    }
+  }
+  .utility,
+  .whyus,
+  .reviews,
+  .portfolio,
+  .team,
+  .aboutus{
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header{
+    &__menu-btn{
+      margin-left: auto;
+    }
+    &__contain{
+      transform: translateY(-1100%);
+      transition: all .3s;
+      position: absolute;
+      top: 470px;
+      right: 0;
+      max-width: 300px;
+      width: 100%;
+      margin: 0;
+      background-color: #F0F0F0;
+    }
+  }
+  .header--active{
+    .header__contain{
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .reviews{
+    &__item{
+      margin: 0 0 40px;
+    }
+  }
+  .aboutus__imgBox,
+  .aboutus__img{
+    height: 400px;
+  }
+}
+
+
+@media (max-width: 460px) {
+  .top-slider{
+    &__content{
+      margin: 0 15px;
+    }
+    &__content-title {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 28px;
+    }
+    &__content-subtitle {
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+  }
+  .title{
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+
+@media (max-width: 420px) {
+  .portfolio__items{
+    .slick-prev{
+      left: -10px;
+    }
+    .slick-next{
+      right: -10px;
+    }
+  }
+  .portfolio__contents {
+    margin: 0 20px 38px;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutus__imgBox,
+  .aboutus__img {
+    height: 300px;
+  }
+}

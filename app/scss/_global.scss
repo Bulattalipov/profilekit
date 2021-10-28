@@ -1,0 +1,32 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  color: #1F1A17;
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title{
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 65px;
+  color: #000000;
+  text-align: left;
+}
