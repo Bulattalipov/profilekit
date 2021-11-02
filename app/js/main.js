@@ -118,4 +118,42 @@ $(function () {
     $($(this)).next().toggleClass('vacancies-item__box--active');
   });
 
+  $('.entrance__link, .header__contain-boxEntrance, .header__contain-boxReg, .cabinet-basket__btn').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    focus: '#name',
+
+    // When elemened is focused, some mobile browsers in some cases zoom in
+    // It looks not nice, so we disable it:
+    callbacks: {
+      beforeOpen: function () {
+        if ($(window).width() < 700) {
+          this.st.focus = false;
+        } else {
+          this.st.focus = '#name';
+        }
+      }
+    }
+  });
+
+
+  $('.registration__tab').on('click', function (e) {
+    e.preventDefault();
+    $('.registration__tab').removeClass('registration__tab--active');
+    $(this).addClass('registration__tab--active');
+
+    $('.registration__form').removeClass('registration__form--active');
+    $($(this).attr('href')).addClass('registration__form--active');
+  });
+
+    $('.cabinet-filter__item-title').on('click', function () {
+    $(this).parent().toggleClass('cabinet-filter__item--active');
+  });
+
+  $('.delivery__get-label').on('click', function () {
+    $('.delivery__get-label').removeClass('delivery__get-label--active');
+    $(this).addClass('delivery__get-label--active');
+  });
+
+
 });

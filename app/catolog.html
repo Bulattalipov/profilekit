@@ -70,12 +70,15 @@
             Личный кабинет
           </a>
           <div class="header__contain-box">
-            <a class="header__contain-boxEntrance" href="#">
+            <a class="header__contain-boxEntrance" href="#entrance">
               Войти
             </a>
-            <a class="header__contain-boxReg" href="#">
+            <a class="header__contain-boxReg" href="#registration">
               Регистрация
             </a>
+          </div>
+          <div class="header__contain-name">
+            Соляр Максим Л.
           </div>
         </div>
         <div class="header__menu-btn">
@@ -98,7 +101,7 @@
         </div>
       </div>
     </section>
-    <div class="catolog">
+    <section class="catolog">
       <div class="container2">
         <div class="catolog__title title">
           Каталог профиль комплект
@@ -285,6 +288,81 @@
                 Посмотреть
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="pop-ups">
+      <div class="entrance pop mfp-hide" id="entrance">
+        <div class="entrance__wrapper">
+          <div class="entrance__title">
+            Вход в личный кабинет
+          </div>
+          <form class="entrance__form">
+            <input class="entrance__form-input input" type="text" placeholder="Номер телефона">
+            <input class="entrance__form-input input" type="text" placeholder="Введите пароль">
+            <button class="entrance__form-btn btn" type="submit">
+              Войти
+            </button>
+          </form>
+          <div class="entrance__links">
+            <a class="entrance__link" href="#">
+              Забыли пароль?
+            </a>
+            <span>/</span>
+            <a class="entrance__link" href="#registration">
+              Регистрация
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="registration pop mfp-hide" id="registration">
+        <div class="registration__wrapper">
+          <div class="registration__title">
+            Регистрация
+          </div>
+          <div class="registration__tabs">
+            <a class="registration__tab registration__tab--active" href="#tab-1">
+              Физическое лицо
+            </a>
+            <a class="registration__tab" href="#tab-2">
+              Юридическое лицо
+            </a>
+          </div>
+          <div class="registration__forms">
+            <div class="registration__form registration__form--active" id="tab-1">
+              <form class="registration-fiz__form">
+                <input class="registration-fiz__input input" type="text" placeholder="Номер телефона">
+                <input class="registration-fiz__input input" type="text" placeholder="Введите пароль">
+                <label class="registration-fiz__label">
+                  <input class="registration-fiz__label-input" type="checkbox">
+                  <span class="registration-fiz__label-check"></span>
+                  Согласие на обработку персональных данных
+                </label>
+                <button class="registration-fiz__btn btn" type="submit">
+                  Зарегистрироваться
+                </button>
+              </form>
+            </div>
+            <div class="registration__form" id="tab-2">
+              <form class="registration-jur__form">
+                <input class="registration-jur__input input" type="text" placeholder="Номер телефона">
+                <input class="registration-jur__input input" type="text" placeholder="Введите пароль">
+                <input class="registration-jur__input input" type="text" placeholder="Электронная почта">
+                <input class="registration-jur__input input" type="text" placeholder="ИНН">
+                <input class="registration-jur__input input" type="text" placeholder="Название компании">
+                <input class="registration-jur__input input" type="text" placeholder="Юридический адрес">
+                <button class="registration-jur__btn btn" type="submit">
+                  Зарегистрироваться
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="registration__box">
+            <div class="registration__box-text">
+              Уже есть личный аккаунт?
+            </div>
+            <a class="registration__box-link" href="#entrance">Войти</a>
           </div>
         </div>
       </div>
