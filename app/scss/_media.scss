@@ -10,6 +10,28 @@
       margin: 0 50px 78px;
     }
   }
+  .steps{
+    padding: 150px 0 100px;
+    &__wrapper{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__item{
+      margin: 0 20px 50px;
+    }
+  }
+  .color{
+    &__wrapper{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__title{
+      margin-bottom: 50px;
+    }
+    &__form{
+      margin-left: auto;
+    }
+  }
 }
 
 @media (max-width: 1350px){
@@ -189,6 +211,21 @@
   .map{
     height: 300px;
   }
+  .color{
+    &__wrapper{
+      padding: 70px 20px;
+    }
+  }
+  .color-portfolio {
+    &__item {
+      &:nth-child(1) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      &:nth-child(2) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 }
 
 @media (max-width: 850px) {
@@ -283,7 +320,9 @@
   .aboutus,
   .catolog,
   .blog,
-  .delivery
+  .delivery,
+  .steps,
+  .color-portfolio
   {
     padding: 100px 0;
   }
@@ -308,6 +347,11 @@
   .delivery-top__title{
     font-size: 50px;
   }
+  .steps{
+    &__item{
+      margin: 0 0 40px;
+    }
+  }
 }
 
 @media (max-width: 700px) {
@@ -322,6 +366,22 @@
     }
     &__item-box{
       margin-left: auto;
+    }
+  }
+  .color{
+    &__form-inputs{
+      flex-direction: column;
+    }
+    &__form-input{
+      margin-bottom: 15px;
+    }
+    &__form-box{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__form-boxLabel{
+      width: 100%;
+      margin-bottom: 20px;
     }
   }
 }
@@ -438,6 +498,9 @@
   .delivery__calculate-boxContain-label{
     margin-bottom: 20px;
   }
+  .color-portfolio__item-img{
+    height: 180px;
+  }
 }
 @media (max-width: 500px) {
   .reviews{
@@ -491,6 +554,10 @@
       line-height: 50px;
       margin-bottom: 28px;
     }
+  }
+  .color__title{
+    font-size: 35px;
+    line-height: 50px;
   }
 }
 
