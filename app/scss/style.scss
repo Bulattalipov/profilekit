@@ -289,7 +289,18 @@
   &__item-text{
     font-size: 18px;
     line-height: 18px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 12px;   
+    min-height: 36px; 
+  }
+  &__item-link{
+    color: #646464;
+    font-size: 14px;
+    line-height: 14px;
+    &:hover{
+      color: #DB251A;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -2279,6 +2290,48 @@ button.mfp-close{
   &__item-textLink{
     color: #DB251A;
     text-decoration: underline;
+  }
+}
+
+.history{
+  .cabinet-content__form-input{
+    max-width: 100%;
+  }
+}
+
+.history-list{
+  &__top {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    border-bottom: 1px solid #F2F2F2;
+  }
+  &__title {
+    font-size: 12px;
+    line-height: 16px;
+    color: #C4C4C4;
+    padding-bottom: 16px;
+    padding: 0 5px;
+    min-width: 140px;
+    &:nth-child(1) {
+      max-width: 100%;
+      width: 100%;
+      min-width: 150px;
+    }
+  }
+  &__item-title {
+    max-width: 100%;
+    width: 100%;
+    min-width: 150px;
+  }
+  &__item-box {
+    padding: 15px 5px;
+    text-align: start;
+    min-width: 140px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
   }
 }
 
