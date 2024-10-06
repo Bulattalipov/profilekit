@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="logo header__logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="catolog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <p class="menu__list-serviceText">Услуги</p>
+              <ul class="menu__list-service">
+                <li class="menu__list-serviceItem">
+                  <a class="menu__list-serviceLink" href="design.html">Рассчет алюминиевых конструкций</a>
+                </li>
+                <li class="menu__list-serviceItem">
+                  <a class="menu__list-serviceLink" href="painting.html">Покраска</a>
+                </li>
+                <li class="menu__list-serviceItem">
+                  <a class="menu__list-serviceLink" href="delivery.html">Доставка</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="certificates.html">
+                Сертификаты
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="blog.html">
+                Блог
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="vacancies.html">
+                Вакансии
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="contact.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__numbers">
+          <a class="header__numbers-link" href="tel:88432453363">
+            8 (843) 245 33 - 63
+          </a>
+          <a class="header__numbers-link" href="tel:88432453373">
+            8 (843) 245 33 - 73
+          </a>
+        </div>
+        <div class="header__contain">
+          <a class="header__contain-cabinet" href="cabinet.html">
+            Личный кабинет
+          </a>
+          <div class="header__contain-box">
+            <a class="header__contain-boxEntrance" href="#entrance">
+              Войти
+            </a>
+            <a class="header__contain-boxReg" href="#registration">
+              Регистрация
+            </a>
+          </div>
+          <div class="header__contain-name">
+            Соляр Максим Л.
+          </div>
+        </div>
+        <div class="header__menu-btn">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="cabinet cabinet-order">
+      <div class="container">
+        <div class="cabinet__wrapper">
+          <div class="cabinet__title title">
+            Заказ №47728
+          </div>
+          <div class="cabinet-links">
+            <a class="cabinet-links__item cabinet-links__item--active" href="cabinet.html">
+              <span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8C14.6663 4.3181 11.6816 1.33334 7.99967 1.33334C4.31778 1.33334 1.33301 4.3181 1.33301 8C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z"
+                    stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M8 5.33334V10.6667" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M5.33301 8H10.6663" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="cabinet-links__item-text">Создать заказ</span>
+            </a>
+            <a class="cabinet-links__item" href="history.html">
+              <span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.8">
+                    <path d="M11.3333 6.66666H2" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14 4H2" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14 9.33334H2" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11.3333 12H2" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </svg>
+              </span>
+              <span class="cabinet-links__item-text">История заказов</span>
+            </a>
+            <a class="cabinet-links__item" href="history.html">
+              <span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.8">
+                    <path d="M11.3333 6.66666H2" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14 4H2" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14 9.33334H2" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11.3333 12H2" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </svg>
+              </span>
+              <span class="cabinet-links__item-text">История заказов</span>
+            </a>
+            <a class="cabinet-links__item" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.8">
+                  <path
+                    d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6"
+                    stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10.667 11.3333L14.0003 8L10.667 4.66666" stroke="#999997" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M14 8H6" stroke="#999997" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+              <span class="cabinet-links__item-text">Выход</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="order">
+      <div class="container">
+        <p class="order__text">
+          Заказ <span class="order__text-black">№ 47728</span> был оформлен <span
+            class="order__text-black">11.02.2022</span> и находится в статусе <span
+            class="order__text-red">Обработка.</span>
+        </p>
+        <div class="order__line"></div>
+        <div class="order__content order-content">
+          <div class="order-content__column">
+            <div class="order-content__item">
+              <h4 class="order-content__item-title">
+                Информация о заказе:
+              </h4>
+              <p class="order-content__subtitle">
+                Товар:
+              </p>
+              <ul class="order-content__list">
+                <li class="order-content__list-item order-content__list-item--active">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="order-content__column">
+            <div class="order-content__item order-content__item-change">
+              <h4 class="order-content__item-title">
+                Информация о заказе:
+              </h4>
+              <p class="order-content__color">
+                Цвета товаров в заказе:
+              </p>
+              <ul class="order-content__list">
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+                <li class="order-content__list-item">
+                  Уплотнитель МПУ-45.02 уп. 500 м. × 1
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="order-content__column">
+            <div class="order-content__item order-content__item-change">
+              <h4 class="order-content__item-title">
+                Доставка:
+              </h4>
+              <p class="order-content__adress">
+                Адрес доставки: <span>Чистопльская 34</span>
+              </p>
+              <p class="order-content__date">
+                Время и дата доставки: <span>04.12.2021
+                  - 12:00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="order__line"></div>
+        <div class="order__contact order-contact">
+          <div class="order-contact__wrapper">
+            <div class="order-contact__item">
+              <h4 class="order-contact__item-title">
+                Платёжный адрес:
+              </h4>
+              <ul class="order-contact__item-list">
+                <li class="order-contact__item-list-item">
+                  Айдар
+                </li>
+                <li class="order-contact__item-list-item">
+                  Чистопльская 34
+                </li>
+                <li class="order-contact__item-list-item">
+                  89177340970
+                </li>
+                <li class="order-contact__item-list-item">
+                  info@aigam.ru
+                </li>
+              </ul>
+            </div>
+            <div class="order-contact__item">
+              <h4 class="order-contact__item-title">
+                Адрес доставки:
+              </h4>
+              <ul class="order-contact__item-list">
+                <li class="order-contact__item-list-item">
+                  Айдар
+                </li>
+                <li class="order-contact__item-list-item">
+                  ООО Рога Копыта 2
+                </li>
+                <li class="order-contact__item-list-item">
+                  Чистопльская 34
+                </li>
+                <li class="order-contact__item-list-item">
+                  89177340970
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-ups">
+      <div class="entrance pop mfp-hide" id="entrance">
+        <div class="entrance__wrapper">
+          <div class="entrance__title">
+            Вход в личный кабинет
+          </div>
+          <form class="entrance__form">
+            <input class="entrance__form-input input" type="text" placeholder="Номер телефона">
+            <input class="entrance__form-input input" type="text" placeholder="Введите пароль">
+            <button class="entrance__form-btn btn" type="submit">
+              Войти
+            </button>
+          </form>
+          <div class="entrance__links">
+            <a class="entrance__link" href="#">
+              Забыли пароль?
+            </a>
+            <span>/</span>
+            <a class="entrance__link" href="#registration">
+              Регистрация
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="registration pop mfp-hide" id="registration">
+        <div class="registration__wrapper">
+          <div class="registration__title">
+            Регистрация
+          </div>
+          <div class="registration__tabs">
+            <a class="registration__tab registration__tab--active" href="#tab-1">
+              Физическое лицо
+            </a>
+            <a class="registration__tab" href="#tab-2">
+              Юридическое лицо
+            </a>
+          </div>
+          <div class="registration__forms">
+            <div class="registration__form registration__form--active" id="tab-1">
+              <form class="registration-fiz__form">
+                <input class="registration-fiz__input input registration-fiz__input-telephone" type="text"
+                  placeholder="Номер телефона">
+                <input class="registration-fiz__input input" type="text" placeholder="Введите пароль">
+                <label class="registration-fiz__label">
+                  <input class="registration-fiz__label-input" type="checkbox">
+                  <span class="registration-fiz__label-check"></span>
+                  Согласие на обработку персональных данных
+                </label>
+                <button class="registration-fiz__btn btn" type="submit">
+                  Зарегистрироваться
+                </button>
+              </form>
+            </div>
+            <div class="registration__form" id="tab-2">
+              <form class="registration-jur__form form">
+                <input class="registration-jur__input input registration-fiz__input-telephone" type="text"
+                  placeholder="Номер телефона" data-validate-field="tel">
+                <input class="registration-jur__input input" type="text" placeholder="Введите пароль">
+                <input class="registration-jur__input input registration-jur__input-email" type="text"
+                  placeholder="Электронная почта" data-validate-field="email">
+                <input class="registration-jur__input input registration-jur__input-inn" type="text" placeholder="ИНН">
+                <input class="registration-jur__input input" type="text" placeholder="Название компании">
+                <input class="registration-jur__input input" type="text" placeholder="Юридический адрес">
+                <button class="registration-jur__btn btn" type="submit">
+                  Зарегистрироваться
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="registration__box">
+            <div class="registration__box-text">
+              Уже есть личный аккаунт?
+            </div>
+            <a class="registration__box-link" href="#entrance">Войти</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="footer__box">
+          <a class="footer__box-mail" href="mailto:profilkomplect@mail.ru">profilkomplect@mail.ru</a>
+          <a class="footer__box-tel" href="tel:88432453363">8 (843) 245 33 - 63</a>
+          <a class="footer__box-tel" href="tel:88432453373">8 (843) 245 33 - 73</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    $(function () {
+      $("#datepicker").datepicker();
+    });
+  </script>
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,17 +1,871 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-<body>
-  
-  
 
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="logo header__logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link menu__list-link--active" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="catolog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <p class="menu__list-serviceText">Услуги</p>
+              <ul class="menu__list-service">
+                <li class="menu__list-serviceItem">
+                  <a class="menu__list-serviceLink" href="design.html">Рассчет алюминиевых конструкций</a>
+                </li>
+                <li class="menu__list-serviceItem">
+                  <a class="menu__list-serviceLink" href="painting.html">Покраска</a>
+                </li>
+                <li class="menu__list-serviceItem">
+                  <a class="menu__list-serviceLink" href="delivery.html">Доставка</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="certificates.html">
+                Сертификаты
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="blog.html">
+                Блог
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="vacancies.html">
+                Вакансии
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="contact.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__numbers">
+          <a class="header__numbers-link" href="tel:88432453363">
+            8 (843) 245 33 - 63
+          </a>
+          <a class="header__numbers-link" href="tel:88432453373">
+            8 (843) 245 33 - 73
+          </a>
+        </div>
+        <div class="header__contain">
+          <a class="header__contain-cabinet" href="cabinet.html">
+            Личный кабинет
+          </a>
+          <div class="header__contain-box">
+            <a class="header__contain-boxEntrance" href="#entrance">
+              Войти
+            </a>
+            <a class="header__contain-boxReg" href="#registration">
+              Регистрация
+            </a>
+          </div>
+          <div class="header__contain-name">
+            Соляр Максим Л.
+          </div>
+        </div>
+        <div class="header__menu-btn">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="top-slider">
+      <div class="top-slider__images">
+        <img class="top-slider__image" src="images/top-slider/top-slider__img.jpg" alt="">
+        <img class="top-slider__image" src="images/top-slider/top-slider__img.jpg" alt="">
+        <img class="top-slider__image" src="images/top-slider/top-slider__img.jpg" alt="">
+        <img class="top-slider__image" src="images/top-slider/top-slider__img.jpg" alt="">
+      </div>
+      <div class="top-slider__contents">
+        <div class="top-slider__content">
+          <div class="top-slider__content-title wow animate__flipInX animate__animated">
+            Всё для
+            алюминиевых
+            конструкций
+          </div>
+          <div class="top-slider__content-subtitle">
+            системы "Татпроф"
+          </div>
+          <a class="top-slider__content-link" href="catolog.html">
+            Подробнее
+          </a>
+        </div>
+        <div class="top-slider__content">
+          <div class="top-slider__content-title wow animate__flipInX animate__animated">
+            Всё для
+            алюминиевых
+            конструкций
+          </div>
+          <div class="top-slider__content-subtitle">
+            системы "Татпроф"
+          </div>
+          <a class="top-slider__content-link" href="#">
+            Подробнее
+          </a>
+        </div>
+        <div class="top-slider__content">
+          <div class="top-slider__content-title wow animate__flipInX animate__animated">
+            Всё для
+            алюминиевых
+            конструкций
+          </div>
+          <div class="top-slider__content-subtitle">
+            системы "Татпроф"
+          </div>
+          <a class="top-slider__content-link" href="#">
+            Подробнее
+          </a>
+        </div>
+        <div class="top-slider__content">
+          <div class="top-slider__content-title wow animate__flipInX animate__animated">
+            Всё для
+            алюминиевых
+            конструкций
+          </div>
+          <div class="top-slider__content-subtitle">
+            системы "Татпроф"
+          </div>
+          <a class="top-slider__content-link" href="#">
+            Подробнее
+          </a>
+        </div>
+      </div>
+    </div>
+    <section class="utility">
+      <div class="container">
+        <div class="utility__title title wow animate__fadeInLeft animate__animated">
+          Чем мы можем быть полезны?
+        </div>
+        <div class="utility__wrapper">
+          <div class="utility__item wow animate__fadeInDown animate__animated">
+            <img class="utility__item-img" src="images/utility/1.png" alt="">
+            <div class="utility__item-text">
+              Алюминиевый профиль
+              косплекутюший фурнитура
+            </div>
+            <a class="utility__item-link" href="#">
+              Подробнее
+            </a>
+          </div>
+          <div class="utility__item wow animate__fadeInDown animate__animated" data-wow-delay="0.6s">
+            <img class="utility__item-img" src="images/utility/2.png" alt="">
+            <div class="utility__item-text">
+              Рассчет алюминиевых конструкций
+            </div>
+            <a class="utility__item-link" href="design.html">
+              Подробнее
+            </a>
+          </div>
+          <div class="utility__item wow animate__fadeInDown animate__animated" data-wow-delay="0.8s">
+            <img class="utility__item-img" src="images/utility/3.png" alt="">
+            <div class="utility__item-text">
+              Покраска
+            </div>
+            <a class="utility__item-link" href="painting.html">
+              Подробнее
+            </a>
+          </div>
+          <div class="utility__item wow animate__fadeInDown animate__animated" data-wow-delay="1s">
+            <img class="utility__item-img" src="images/utility/4.png" alt="">
+            <div class="utility__item-text">
+              Доставка
+            </div>
+            <a class="utility__item-link" href="delivery.html">
+              Подробнее
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="whyus">
+      <div class="container">
+        <div class="whyus__wrapper">
+          <div class="whyus__title title wow animate__fadeInLeft animate__animated">
+            Почему именно мы?
+          </div>
+          <div class="whyus__items">
+            <div class="whyus__item wow animate__fadeInRight animate__animated">
+              <img class="whyus__item-img" src="images/whyus/1.png" alt="">
+              <div class="whyus__item-text">
+                Профиль и фурнитура в наличие на складу
+              </div>
+            </div>
+            <div class="whyus__item wow animate__fadeInRight animate__animated" data-wow-delay="1s">
+              <img class="whyus__item-img" src="images/whyus/2.png" alt="">
+              <div class="whyus__item-text">
+                Доставка в течение 6 часов
+              </div>
+            </div>
+            <div class="whyus__item wow animate__fadeInRight animate__animated" data-wow-delay="2s">
+              <img class="whyus__item-img" src="images/whyus/3.png" alt="">
+              <div class="whyus__item-text">
+                Покраска за 3 дня
+              </div>
+            </div>
+            <div class="whyus__item wow animate__fadeInRight animate__animated" data-wow-delay="3s">
+              <img class="whyus__item-img" src="images/whyus/4.png" alt="">
+              <div class="whyus__item-text">
+                Профессиональный расчет за 1 день
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__title title wow animate__fadeInLeft animate__animated">
+          Отзывы
+        </div>
+        <div class="reviews__wrapper">
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Маргарита
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              Работаем с компанией «ПрофильКомплект» уже 2 года. Очень клиентоориентированные, отзывчивые ребята!
+              Всегда находят выход из любой самой нестандартной ситуации. Отдельное спасибо Алену за его
+              профессионализм и готовность помочь. Процветания вам! Растём и развиваемся вместе с вами!)
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Диана
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              Работаем с компанией Профиль Комплект на протяжении 2х лет и за это время ни разу не разочаровались в
+              своем выборе поставщика. Всегда адекватный прайс, всегда помогут и посоветуют лучшее решение, сотрудники
+              компании- профессионалы своего дела. Огромная благодарность Алену Любягину за ответственность,
+              оперативность и доброжелательное отношение к клиентам.
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Гульнара
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              Рекомендую!!! Отличный поставщик алюминиевого профиля!!!! Работаем много лет. Сотрудники компетентные и
+              отзывчивые!!! Ребята быстро отвечают на вопросы, заказы обрабатываются качественно и оперативно!!!
+              Отгрузка по плану, сроки поставок чёткие!!!
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Андрей
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              Компания ПК, а особенно товарищ Ален ооочень ответственно подходят к любому вопросу касаемо их
+              товаров,профиля. Посоветуют как лучше будет, быстро отвечают,посчитают ,всё как надо отгрузят. Даже если
+              по мелочи обратиться, то продадут даже один штапик или например петли на двери поштучно! Что для мелких
+              заказов оочень важно не покупать с запасом, а конкретно под заказ. Рекомендую всем. Ген.директор ООО
+              "ОСТЕКЛЕНИЕ КАЗАНЬ "
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Наталья
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              Уже много лет сотрудничаем с Профиль Комплектом. Всегда довольны качеством продукции и отношением к
+              клиенту. Спасибо за вашу работу, обязательно будем и дальше делать заказы у вас.
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Альберт
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              "Безмерная благодарность компании «ПрофильКомплект», в лице менеджера Искандера,
+              за самый человеческий подход, чёткость, вежливость, оперативность и высокие профессиональные качества!
+              ООО ""ЛЕДДЕР-ОКНА"
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Ренат
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              "ООО ПК «КОК» выражает Вам свою благодарность и признательность за качественную и своевременную отгрузку
+              продукции, а также быструю и качественную обработку рекламаций. Вы всегда идёте на встречу.
+              Также хотим выразить личную благодарность менеджеру Дмитрию, с которым мы работаем, за профессионализм,
+              терпение и умение в кратчайшие сроки решать поставленные ему задачи.
+              Будем рады дальнейшему сотрудничеству и рекомендуем компанию ООО «Профиль Комплект» как надёжного,
+              грамотного и заботящегося о благополучии своих клиентов партнёре.
+              "
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Раис
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              Много лет заказываем алюминиевый профиль и комплектующие в ООО "ПрофильКомплект" Радует их ценовая
+              политика относительно постоянных клиентов, также менеджеры дают полную консультацию по всем вопросам, но
+              есть нарекания по поводу продукции (бывают царапины) и проблемы с доставкой (либо не могут доставить, либо
+              приходится долго ждать на складе).
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Рафаэль
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              Хочу вам рассказать о самом продуктивном сотрудничестве в сфере закупки алюминиевых профилей и
+              комплектующих.Я имею опыт более 16 лет в сфере светопрозрачных алюминиевых конструкций. За этот период
+              удалось сотрудничать со многими поставщиками . И не малую роль ,а возможно и самую главную играет менеджер
+              компании.Оперативность в выставлении счетов,оценка,анализ и рекомендации по закупке-все это делает работу
+              с поставщиком не только комфортной но и продуктивной. И вот сотрудничая уже более 8 лет с компанией
+              “ПрофильКомплект” нами было реализовано множество проектов.Но и в этой компании удалось поработать с
+              разными менеджерами,но написать хочется только про менеджера Евгения. Помимо того,что Евгений не просто
+              профессионал в этой сфере,он всегда подходит рационально к работе по каждой заявке,сопровождает вас полным
+              курсом-от начала выставления счета до его получения на склад ,при возникновении каких либо сложностей
+              всегда найдет рещение ,а не будет искать виноватого,как это часто бывает. Евгений действительно
+              профессионал своего дела,да и просто хороший человек!
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Гульшат
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              С компанией ООО «Профиль Комплект» сотрудничаем с 2016 года. Общее впечатление о работе компании можно
+              выразить кратко: профессионализм, комплексный подход к решению поставленных задач, умение точно и
+              своевременно выполнить взятые на себя обязательства к любому заказу. В компании работают сотрудники,
+              способные в нужный момент разобраться в ситуации любой сложности в кратчайшие сроки. Мы рады, что
+              сотрудничаем с ООО «Профиль Комплект» в качестве поставщика. Огромное Вам спасибо, так держать!
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-name">
+              Дмитрий
+            </div>
+            <div class="reviews__item-text wow animate__fadeInUp animate__animated">
+              "Полностью удовлетворены уровнем обслуживания и качеством предоставляемых услуг. Особенно радует быстрая
+              реакция на все запросы.
+              Мы верим в сохранение деловых и дружеских отношений, надеемся на дальнейшее взаимовыгодное
+              сотрудничество."
+            </div>
+            <button class="reviews__item-show">
+              Показать полностью
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio__title title wow animate__fadeInLeft animate__animated">
+          Наше портфолио
+        </div>
+        <div class="portfolio__wrapper">
+          <div class="portfolio__contents">
+            <div class="portfolio__content">
+              <div class="portfolio__content-inner">
+                <div class="portfolio__content-imgBox">
+                  <img class="portfolio__content-img" src="images/portfolio/1.jpg" alt="">
+                </div>
+                <div class="portfolio__content-info">
+                  <div class="portfolio__content-infoTitle">
+                    Название Объекта 1
+                  </div>
+                  <div class="portfolio__content-infoAddress">
+                    Область, город, улица
+                  </div>
+                  <div class="portfolio__content-infoLine"></div>
+                  <div class="portfolio__content-infoName">
+                    Используемые системы:
+                  </div>
+                  <div class="portfolio__content-infoText">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis
+                    enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__content">
+              <div class="portfolio__content-inner">
+                <div class="portfolio__content-imgBox">
+                  <img class="portfolio__content-img" src="images/portfolio/2.jpg" alt="">
+                </div>
+                <div class="portfolio__content-info">
+                  <div class="portfolio__content-infoTitle">
+                    Название Объекта 2
+                  </div>
+                  <div class="portfolio__content-infoAddress">
+                    Область, город, улица
+                  </div>
+                  <div class="portfolio__content-infoLine"></div>
+                  <div class="portfolio__content-infoName">
+                    Используемые системы:
+                  </div>
+                  <div class="portfolio__content-infoText">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis
+                    enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__content">
+              <div class="portfolio__content-inner">
+                <div class="portfolio__content-imgBox">
+                  <img class="portfolio__content-img" src="images/portfolio/3.jpg" alt="">
+                </div>
+                <div class="portfolio__content-info">
+                  <div class="portfolio__content-infoTitle">
+                    Название Объекта 3
+                  </div>
+                  <div class="portfolio__content-infoAddress">
+                    Область, город, улица
+                  </div>
+                  <div class="portfolio__content-infoLine"></div>
+                  <div class="portfolio__content-infoName">
+                    Используемые системы:
+                  </div>
+                  <div class="portfolio__content-infoText">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis
+                    enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__content">
+              <div class="portfolio__content-inner">
+                <div class="portfolio__content-imgBox">
+                  <img class="portfolio__content-img" src="images/portfolio/4.jpg" alt="">
+                </div>
+                <div class="portfolio__content-info">
+                  <div class="portfolio__content-infoTitle">
+                    Название Объекта 4
+                  </div>
+                  <div class="portfolio__content-infoAddress">
+                    Область, город, улица
+                  </div>
+                  <div class="portfolio__content-infoLine"></div>
+                  <div class="portfolio__content-infoName">
+                    Используемые системы:
+                  </div>
+                  <div class="portfolio__content-infoText">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis
+                    enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__content">
+              <div class="portfolio__content-inner">
+                <div class="portfolio__content-imgBox">
+                  <img class="portfolio__content-img" src="images/portfolio/3.jpg" alt="">
+                </div>
+                <div class="portfolio__content-info">
+                  <div class="portfolio__content-infoTitle">
+                    Название Объекта 5
+                  </div>
+                  <div class="portfolio__content-infoAddress">
+                    Область, город, улица
+                  </div>
+                  <div class="portfolio__content-infoLine"></div>
+                  <div class="portfolio__content-infoName">
+                    Используемые системы:
+                  </div>
+                  <div class="portfolio__content-infoText">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis
+                    enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__content">
+              <div class="portfolio__content-inner">
+                <div class="portfolio__content-imgBox">
+                  <img class="portfolio__content-img" src="images/portfolio/4.jpg" alt="">
+                </div>
+                <div class="portfolio__content-info">
+                  <div class="portfolio__content-infoTitle">
+                    Название Объекта 5
+                  </div>
+                  <div class="portfolio__content-infoAddress">
+                    Область, город, улица
+                  </div>
+                  <div class="portfolio__content-infoLine"></div>
+                  <div class="portfolio__content-infoName">
+                    Используемые системы:
+                  </div>
+                  <div class="portfolio__content-infoText">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis
+                    enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="portfolio__items">
+            <div class="portfolio__item">
+              <img class="portfolio__item-img" src="images/portfolio/1.jpg" alt="">
+              <div class="portfolio__item-text">
+                Название Объекта Название Объекта Название Объекта
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img class="portfolio__item-img" src="images/portfolio/2.jpg" alt="">
+              <div class="portfolio__item-text">
+                Название Объекта Название Объекта Название Объекта
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img class="portfolio__item-img" src="images/portfolio/3.jpg" alt="">
+              <div class="portfolio__item-text">
+                Название Объекта Название Объекта Название Объекта
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img class="portfolio__item-img" src="images/portfolio/4.jpg" alt="">
+              <div class="portfolio__item-text">
+                Название Объекта Название Объекта Название Объекта
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img class="portfolio__item-img" src="images/portfolio/2.jpg" alt="">
+              <div class="portfolio__item-text">
+                Название Объекта Название Объекта Название Объекта
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img class="portfolio__item-img" src="images/portfolio/4.jpg" alt="">
+              <div class="portfolio__item-text">
+                Название Объекта Название Объекта Название Объекта
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <div class="team__title title wow animate__fadeInLeft animate__animated">
+          Команда
+        </div>
+        <div class="team__wrapper">
+          <div class="team__item">
+            <img class="team__item-img" src="images/team/1.jpg" alt="">
+            <div class="team__item-name">
+              Annette Black
+            </div>
+            <div class="team__item-spes">
+              Главный инженер
+            </div>
+            <a class="team__item-tel team__item-tel--margin" href="tel:+79233233333">
+              +7 (923) 323 33-33
+            </a>
+            <a class="team__item-tel" href="tel:+79233233333">
+              +7 (923) 323 33-33
+            </a>
+          </div>
+          <div class="team__item">
+            <img class="team__item-img" src="images/team/2.jpg" alt="">
+            <div class="team__item-name">
+              Annette Black
+            </div>
+            <div class="team__item-spes">
+              Главный инженер
+            </div>
+            <a class="team__item-tel" href="tel:+79233233333">
+              +7 (923) 323 33-33
+            </a>
+          </div>
+          <div class="team__item">
+            <img class="team__item-img" src="images/team/3.jpg" alt="">
+            <div class="team__item-name">
+              Annette Black
+            </div>
+            <div class="team__item-spes">
+              Главный инженер
+            </div>
+            <a class="team__item-tel" href="tel:+79233233333">
+              +7 (923) 323 33-33
+            </a>
+          </div>
+          <div class="team__item">
+            <img class="team__item-img" src="images/team/4.jpg" alt="">
+            <div class="team__item-name">
+              Annette Black
+            </div>
+            <div class="team__item-spes">
+              Главный инженер
+            </div>
+            <a class="team__item-tel" href="tel:+79233233333">
+              +7 (923) 323 33-33
+            </a>
+          </div>
+          <div class="team__item">
+            <img class="team__item-img" src="images/team/5.jpg" alt="">
+            <div class="team__item-name">
+              Annette Black
+            </div>
+            <div class="team__item-spes">
+              Главный инженер
+            </div>
+            <a class="team__item-tel" href="tel:+79233233333">
+              +7 (923) 323 33-33
+            </a>
+          </div>
+          <div class="team__item">
+            <img class="team__item-img" src="images/team/6.jpg" alt="">
+            <div class="team__item-name">
+              Annette Black
+            </div>
+            <div class="team__item-spes">
+              Главный инженер
+            </div>
+            <a class="team__item-tel" href="tel:+79233233333">
+              +7 (923) 323 33-33
+            </a>
+          </div>
+          <div class="team__item">
+            <img class="team__item-img" src="images/team/7.jpg" alt="">
+            <div class="team__item-name">
+              Annette Black
+            </div>
+            <div class="team__item-spes">
+              Главный инженер
+            </div>
+            <a class="team__item-tel" href="tel:+79233233333">
+              +7 (923) 323 33-33
+            </a>
+          </div>
+          <div class="team__item">
+            <img class="team__item-img" src="images/team/8.jpg" alt="">
+            <div class="team__item-name">
+              Annette Black
+            </div>
+            <div class="team__item-spes">
+              Главный инженер
+            </div>
+            <a class="team__item-tel" href="tel:+79233233333">
+              +7 (923) 323 33-33
+            </a>
+          </div>
+          <div class="team__item">
+            <img class="team__item-img" src="images/team/9.jpg" alt="">
+            <div class="team__item-name">
+              Annette Black
+            </div>
+            <div class="team__item-spes">
+              Главный инженер
+            </div>
+            <a class="team__item-tel" href="tel:+79233233333">
+              +7 (923) 323 33-33
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="aboutus">
+      <div class="container">
+        <div class="aboutus__wrapper">
+          <div class="aboutus__imgBox">
+            <img class="aboutus__img wow animate__fadeInLeft animate__animated" data-wow-delay="0.6s"
+              src="images/aboutus__img.png" alt="">
+          </div>
+          <div class="aboutus__content">
+            <div class="aboutus__content-title title wow animate__fadeInLeft animate__animated">
+              О компании
+            </div>
+            <div class="aboutus__content-info">
+              <p class="aboutus__content-infoText wow animate__fadeInRight animate__animated" data-wow-delay="0.5s">
+                <span>“ПрофильКомплект”</span> специализируется на продаже качественных и долговечных алюминиевых
+                конструкций системы
+                «ТАТПРОФ». Компания создана группой единомышленников и действует на рынке уже 9 лет.
+              </p>
+              <p class="aboutus__content-infoText wow animate__fadeInRight animate__animated" data-wow-delay="0.6s">
+                Каждый из ведущих сотрудников прекрасно знает свое дело и работает в данной сфере более 10 лет. Это
+                позволяет предлагать Вам алюминиевый профиль высшего уровня, что подтверждается отечественными и
+                международными сертификатами качества. Система комплектуется оконной и дверной фурнитурой «Stublina»
+                (Сербия).
+              </p>
+              <p class="aboutus__content-infoText wow animate__fadeInRight animate__animated" data-wow-delay="0.7s">
+                При высоком качестве продукции наша компания отличается и гибкой ценовой политикой. Это делает доступной
+                наш алюминиевый профиль практически любой организации.
+              </p>
+              <p class="aboutus__content-infoText wow animate__fadeInRight animate__animated" data-wow-delay="0.8s">
+                 К каждому клиенту применяется индивидуальный подход. Мы всегда открыты для диалога, учитываем все
+                 запросы и пожелания покупателей. Каждая единица продукции подобрана специально под актуальные задачи и
+                 потребности клиента.
+              </p>
+              <p class="aboutus__content-infoText wow animate__fadeInRight animate__animated" data-wow-delay="0.9s">
+                 Отлаженные партнерские отношения с производителями позволяют нам предоставить Вам широкий ассортимент
+                 товара. Этому способствует и развитая складская система. Именно поэтому нужный товар - всегда в
+                 наличии.
+                 Доставка осуществляется оперативно, в течение 6 часов.
+              </p>
+              <p class="aboutus__content-infoText wow animate__fadeInRight animate__animated" data-wow-delay="1.0s">
+                 Вы всегда можете рассчитывать на качественное обслуживание, ведь мы ценим каждого клиента.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="pop-ups">
+      <div class="entrance pop mfp-hide" id="entrance">
+        <div class="entrance__wrapper">
+          <div class="entrance__title">
+            Вход в личный кабинет
+          </div>
+          <form class="entrance__form">
+            <input class="entrance__form-input input" type="text" placeholder="Номер телефона">
+            <input class="entrance__form-input input" type="text" placeholder="Введите пароль">
+            <button class="entrance__form-btn btn" type="submit">
+              Войти
+            </button>
+          </form>
+          <div class="entrance__links">
+            <a class="entrance__link" href="#">
+              Забыли пароль?
+            </a>
+            <span>/</span>
+            <a class="entrance__link" href="#registration">
+              Регистрация
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="registration pop mfp-hide" id="registration">
+        <div class="registration__wrapper">
+          <div class="registration__title">
+            Регистрация
+          </div>
+          <div class="registration__tabs">
+            <a class="registration__tab registration__tab--active" href="#tab-1">
+              Физическое лицо
+            </a>
+            <a class="registration__tab" href="#tab-2">
+              Юридическое лицо
+            </a>
+          </div>
+          <div class="registration__forms">
+            <div class="registration__form registration__form--active" id="tab-1">
+              <form class="registration-fiz__form">
+                <input class="registration-fiz__input input" type="text" placeholder="Номер телефона">
+                <input class="registration-fiz__input input" type="text" placeholder="Введите пароль">
+                <label class="registration-fiz__label">
+                  <input class="registration-fiz__label-input" type="checkbox">
+                  <span class="registration-fiz__label-check"></span>
+                  Согласие на обработку персональных данных
+                </label>
+                <button class="registration-fiz__btn btn" type="submit">
+                  Зарегистрироваться
+                </button>
+              </form>
+            </div>
+            <div class="registration__form" id="tab-2">
+              <form class="registration-jur__form">
+                <input class="registration-jur__input input" type="text" placeholder="Номер телефона">
+                <input class="registration-jur__input input" type="text" placeholder="Введите пароль">
+                <input class="registration-jur__input input" type="text" placeholder="Электронная почта">
+                <input class="registration-jur__input input" type="text" placeholder="ИНН">
+                <input class="registration-jur__input input" type="text" placeholder="Название компании">
+                <input class="registration-jur__input input" type="text" placeholder="Юридический адрес">
+                <button class="registration-jur__btn btn" type="submit">
+                  Зарегистрироваться
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="registration__box">
+            <div class="registration__box-text">
+              Уже есть личный аккаунт?
+            </div>
+            <a class="registration__box-link" href="#entrance">Войти</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="footer__box">
+          <a class="footer__box-mail" href="mailto:profilkomplect@mail.ru">profilkomplect@mail.ru</a>
+          <a class="footer__box-tel" href="tel:88432453363">8 (843) 245 33 - 63</a>
+          <a class="footer__box-tel" href="tel:88432453373">8 (843) 245 33 - 73</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

@@ -46,8 +46,12 @@ function images(){
 }
 
 function scripts() {
-   return src([
-     'node_modules/jquery/dist/jquery.js',
+  return src([
+     'node_modules/slick-carousel/slick/slick.js',
+     'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+     'node_modules/jquery-timepicker/jquery.timepicker.js',
+     'node_modules/wowjs/dist/wow.js',
+     'node_modules/just-validate/dist/just-validate.production.min.js',
      'app/js/main.js'
    ])
    .pipe(concat('main.min.js'))
